@@ -32,9 +32,6 @@ public class ColorsActivity extends AppCompatActivity {
         //ArrayList<String> words = new ArrayList<String>();
         ArrayList<Word> words = new ArrayList<Word>();
 
-        //words.get("one");
-        //Word w = new Word("one";"lutti");
-        //words.add(w);
 
         words.add(new Word("red","wetetti"));
         words.add(new Word("green","chokokki"));

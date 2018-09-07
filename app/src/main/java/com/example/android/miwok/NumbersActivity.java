@@ -36,12 +36,12 @@ public class NumbersActivity extends AppCompatActivity {
         //Word w = new Word("one";"lutti");
         //words.add(w);
 
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
-        words.add(new Word("three","tolookasu"));
-        words.add(new Word("four","oyyisa"));
-        words.add(new Word("five","massoka"));
-        words.add(new Word("six","temmokka"));
+        words.add(new Word("one","lutti", R.drawable.number_one));
+        words.add(new Word("two","otiiko", R.drawable.number_two));
+        words.add(new Word("three","tolookasu", R.drawable.number_three));
+        words.add(new Word("four","oyyisa", R. drawable.number_four));
+        words.add(new Word("five","massoka", R. drawable.number_five));
+        words.add(new Word("six","temmokka", R.drawable.number_six));
 
 
 
