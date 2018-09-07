@@ -68,7 +68,7 @@ public class NumbersActivity extends AppCompatActivity {
 
        // moving from ArrayAdapter to new customized class WordAdapter
         // ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>() (this, R.layout.list_item, words)
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 

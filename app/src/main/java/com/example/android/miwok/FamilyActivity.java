@@ -26,21 +26,21 @@ public class FamilyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_family);
+        setContentView(R.layout.words_list);
 
         //ArrayList<String> words = new ArrayList<String>();
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("red", "wetetti"));
-        words.add(new Word("green", "chokokki"));
-        words.add(new Word("brown", "takaakki"));
-        words.add(new Word("gray", "topoppi"));
-        words.add(new Word("black", "kululli"));
-        words.add(new Word("white", "kelelli"));
+        words.add(new Word("father", "wetetti", R.drawable.family_father));
+        words.add(new Word("mother", "chokokki", R.drawable.family_mother));
+        words.add(new Word("daughter", "takaakki", R.drawable.family_daughter));
+        words.add(new Word("son", "topoppi", R.drawable.family_son));
+        words.add(new Word("grandfather", "kululli", R.drawable.family_grandfather));
+        words.add(new Word("grandmother", "kelelli", R.drawable.family_grandmother));
 
         // moving from ArrayAdapter to new customized class WordAdapter
         // ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>() (this, R.layout.list_item, words)
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 

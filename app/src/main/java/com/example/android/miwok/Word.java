@@ -7,7 +7,9 @@ public class Word {
 
     private String mMiwokTranslation;
 
-    private int mImageResId;
+    private int mImageResId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**create a Word object with two Strings: English and Miwok
      * constructors have no return type (e.g.no void)
@@ -45,5 +47,10 @@ public class Word {
     // get image resource id (drawable folder)
     public int getImageResId(){
         return mImageResId;
+    }
+
+    //returns whether or not there is an image fot the word
+    public boolean hasImage(){
+        return mImageResId != NO_IMAGE_PROVIDED;
     }
 }
