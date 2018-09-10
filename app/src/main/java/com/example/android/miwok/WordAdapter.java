@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.support.v4.content.ContextCompat;
 
 import java.util.ArrayList;
 
@@ -57,8 +58,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         View textContainer = listItens.findViewById(R.id.text_container);
-       // int color = ContextCompat.getColor(getContext(), mColorResId);
-       // textContainer.setBackgroundColor(color);
+        int color = ContextCompat.getColor(getContext(),mColorResId);
+        //int color = Context.getColor(mColorResId);
+        textContainer.setBackgroundColor(color);
 
         return listItens;
        //return super.getView(position, convertView, parent);
